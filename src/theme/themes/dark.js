@@ -1,3 +1,12 @@
+import avatarDark from '../../images/avatar-dark.jpg';
+
 export const dark = {
-    background: 'black'
+    avatar: avatarDark,
+    background: 'black',
+    title: {
+        color: 'white'
+    },
+    menu: {
+        border: '#222'
+    }
 }

@@ -1,10 +1,7 @@
 import { CHANGE_THEME } from './types';
 
-const changeTheme = (theme) => {
-    return {
-        type: CHANGE_THEME,
-        theme: theme
-    }
+const changeTheme = {
+    type: CHANGE_THEME
 }
 
-export default { changeTheme }
+export { changeTheme }

@@ -9,7 +9,8 @@ module.exports = {
         rules: [
             { test: /\.svg$/, use: 'svg-inline-loader', exclude: /node_modules/ },
             { test: /\.css$/, use: [ 'style-loader', 'css-loader' ] },
-            { test: /\.(js)$/, use: 'babel-loader', exclude: /node_modules/ }
+            { test: /\.(js)$/, use: 'babel-loader', exclude: /node_modules/ },
+            { test: /\.svg|png|gif|jpg$/, loader: 'url-loader', exclude: /node_modules/ }
         ]
     },
     output: {

@@ -1,5 +1,7 @@
 import React from 'react';
 import GlobalStyle from '../global/style';
+import Menu from './menu';
+import Content from './content';
 
 import { useSelector } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
@@ -12,7 +14,10 @@ const App = () => {
 
   return <ThemeProvider theme={themes[theme]}>
     <GlobalStyle />
-    <div className="App" />;
+    <div className="App">
+      <Menu />
+      <Content />
+    </div>
   </ThemeProvider>
 };
 
