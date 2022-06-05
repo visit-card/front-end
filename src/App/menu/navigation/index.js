@@ -1,17 +1,61 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import { NavigationComponent, NavigationContent, NavigationItem } from './style';
+import { connect } from 'react-redux';
+import { NavigationComponent, NavigationContainer, NavigationItem } from './style';
+import { EXPERIENCE_ID, PROJECTS_ID, SKILLS_ID, WELCOME_ID } from '../../content/elements';
 
-const Navigation = () => {
+const mapStateToProps = (state) => {
+    return { viewedSectionId: state.viewedSectionId }
+}
 
-    return <NavigationContent>
+const Navigation = props => {
+
+    const items = [
+        {
+            id: WELCOME_ID,
+            title: 'ПРИВЕТСТВИЕ'
+        },
+        {
+            id: EXPERIENCE_ID,
+            title: 'ОПЫТ'
+        },
+        {
+            id: PROJECTS_ID,
+            title: 'ПРОЕКТЫ'
+        },
+        {
+            id: SKILLS_ID,
+            title: 'НАВЫКИ'
+        }
+    ];
+
+    const goToSection = (sectionId) => {
+        document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    return <NavigationContainer>
         <NavigationComponent>
-            <NavigationItem>ПРИВЕТСТВИЕ</NavigationItem>
-            <NavigationItem>ОПЫТ</NavigationItem>
-            <NavigationItem>ПРОЕТЫ</NavigationItem>
-            <NavigationItem>НАВЫКИ</NavigationItem>
+            {
+                items.map( item =>
+                    <NavigationItem
+                        key={item.id}
+                        isActive={props.viewedSectionId === item.id}
+                        onClick={() => goToSection(item.id)}
+                    >
+                        {item.title}
+                    </NavigationItem>
+                )
+            }
         </NavigationComponent>
-    </NavigationContent>
+    </NavigationContainer>
 };
 
-export default Navigation;
+/**
+ * viewedSectionId Отображаемый в данный момент компонент
+ */
+Navigation.propTypes = {
+    viewedSectionId: PropTypes.string
+};
+
+export default connect(mapStateToProps)(Navigation);
