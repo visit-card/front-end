@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 
+import Title from '../../../global/title';
+
 import { themes } from '../../../theme';
 import { changeTheme } from '../../../actions';
 import { AppearAnimation, DisappearAnimation } from './animations';
-import { AvatarContainer, AvatarImage, AvatarTitle } from './style';
+import { AvatarContainer, AvatarImage } from './style';
 import { useDispatch, useSelector } from 'react-redux';
 
 const Avatar = () => {
@@ -27,7 +29,7 @@ const Avatar = () => {
                 }
             }}
         />
-        <AvatarTitle>ЯКОВ ДУДИН</AvatarTitle>
+        <Title>ЯКОВ ДУДИН</Title>
     </AvatarContainer>
 };
 

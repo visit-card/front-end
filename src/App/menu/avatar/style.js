@@ -19,16 +19,7 @@ const AvatarImage = styled.img`
     animation: ${props => props.animation } 0.5s linear 1 forwards;
 `
 
-const AvatarTitle = styled.span`
-    font-size: 24px;
-    font-weight: 900;
-    font-family: "Montserrat", sans-serif;
-    
-    color: ${({ theme }) => theme.title.color};
-`
-
 export {
     AvatarContainer,
-    AvatarImage,
-    AvatarTitle
+    AvatarImage
 }

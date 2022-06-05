@@ -43,7 +43,7 @@ const Navigation = props => {
                         isActive={props.viewedSectionId === item.id}
                         onClick={() => goToSection(item.id)}
                     >
-                        {item.title}
+                        { item.title }
                     </NavigationItem>
                 )
             }
