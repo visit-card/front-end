@@ -1,24 +1,25 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-import { useOnScreen } from '../useOnScreen';
 import { ScrollableSection } from './style';
 import { useDispatch } from 'react-redux';
 import { changeViewedSection } from '../../../actions';
+import { useInView } from 'react-intersection-observer';
 
 const ScrollableElement = props => {
-    const scrollableElementRef = useRef(null);
-    const isOnScreen = useOnScreen(scrollableElementRef);
+    const { ref, inView } = useInView({
+        threshold: [0.25, 0.5, 0.75],
+    });
     const dispatch = useDispatch();
 
     useEffect(() => {
-        if (isOnScreen) {
+        if (inView) {
             dispatch(changeViewedSection(props.id))
         }
-    }, [isOnScreen])
+    }, [inView])
 
     return (
-        <ScrollableSection ref={scrollableElementRef} id={props.id}>
+        <ScrollableSection ref={ref} id={props.id}>
             { props.children }
         </ScrollableSection>
     );

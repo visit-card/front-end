@@ -5,6 +5,7 @@ import { EXPERIENCE_ID, PROJECTS_ID, SKILLS_ID, WELCOME_ID } from './elements';
 
 import ScrollableElement from './scrollableElement';
 import Welcome from './elements/welcome';
+import Experience from './elements/experience';
 
 const Content = () => {
 
@@ -13,7 +14,7 @@ const Content = () => {
             <Welcome />
         </ScrollableElement>
         <ScrollableElement id={EXPERIENCE_ID}>
-            <div>EXPERIENCE</div>
+            <Experience/>
         </ScrollableElement>
         <ScrollableElement id={PROJECTS_ID}>
             <div>PROJECTS</div>
