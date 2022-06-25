@@ -19,7 +19,7 @@ const Avatar = () => {
         <AvatarImage
             src={themes[theme].avatar}
             animation={animation}
-            onClick={() => setAnimation(DisappearAnimation) }
+            onClick={() => setAnimation(DisappearAnimation)}
             onAnimationEnd={() => {
                 if (animation === DisappearAnimation) {
                     dispatch(changeTheme)

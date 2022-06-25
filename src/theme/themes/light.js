@@ -8,5 +8,11 @@ export const light = {
     },
     menu: {
         border: '#ececec'
+    },
+    experience: {
+        timer: {
+            color: 'white',
+            background: '#222'
+        }
     }
 }

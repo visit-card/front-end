@@ -8,5 +8,11 @@ export const dark = {
     },
     menu: {
         border: '#222'
+    },
+    experience: {
+        timer: {
+            color: 'black',
+            background: 'white'
+        }
     }
 }

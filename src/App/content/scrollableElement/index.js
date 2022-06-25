@@ -8,7 +8,7 @@ import { useInView } from 'react-intersection-observer';
 
 const ScrollableElement = props => {
     const { ref, inView } = useInView({
-        threshold: [0.25, 0.5, 0.75],
+        threshold: [0.01],
     });
     const dispatch = useDispatch();
 
@@ -20,7 +20,7 @@ const ScrollableElement = props => {
 
     return (
         <ScrollableSection ref={ref} id={props.id}>
-            { props.children }
+            { inView ? props.children : <div /> }
         </ScrollableSection>
     );
 };

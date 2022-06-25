@@ -16,7 +16,7 @@ const AvatarImage = styled.img`
     
     border-radius: 50%;
     
-    animation: ${props => props.animation } 0.5s linear 1 forwards;
+    animation: ${props => props.animation} 0.5s linear 1 forwards;
 `
 
 export {
