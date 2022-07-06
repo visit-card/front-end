@@ -5,8 +5,7 @@ const Text = styled.p`
     font-weight: 400;
     font-family: "Lato", Sans-serif;
     
-    margin-top: 0em;
-    margin-bottom: 0em;
+    margin: 0em;
     
     color: #888888;
 `

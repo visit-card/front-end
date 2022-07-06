@@ -18,12 +18,12 @@ const ExperienceTimer = () => {
 
     const duration = moment.duration(days, 'days')
     return <TimerContainer>
-        <Counter title={'Years'} value={ duration.years() } />
-        <Counter title={'Months'} value={ duration.months() } />
-        <Counter title={'Days'} value={ duration.days() } />
-        <Counter title={'Hours'} value={ hours } />
-        <Counter title={'Minutes'} value={ minutes } />
-        <Counter title={'Seconds'} value={ seconds } />
+        <Counter title={'Годы'} value={ duration.years() } />
+        <Counter title={'Месяцы'} value={ duration.months() } />
+        <Counter title={'Дни'} value={ duration.days() } />
+        <Counter title={'Часы'} value={ hours } />
+        <Counter title={'Минуты'} value={ minutes } />
+        <Counter title={'Секунды'} value={ seconds } />
     </TimerContainer>
 };
 

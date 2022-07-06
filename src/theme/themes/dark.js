@@ -6,6 +6,9 @@ export const dark = {
     title: {
         color: 'white'
     },
+    scrollbar: {
+        background: 'white'
+    },
     menu: {
         border: '#222'
     },
@@ -13,6 +16,13 @@ export const dark = {
         timer: {
             color: 'black',
             background: 'white'
+        },
+        chart: {
+            color: 'black',
+            background: 'white'
+        },
+        logo: {
+            background: 'black'
         }
     }
 }

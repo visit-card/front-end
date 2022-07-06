@@ -28,7 +28,6 @@ const ScrollableElement = props => {
 /**
  * children Отображаемый элемент в секции
  * id Уникальный идентификатор элемента
- * elementInSight Функция вызываемая при попадании элемента в поле видимости
  */
 ScrollableElement.propTypes = {
     children: PropTypes.oneOfType([

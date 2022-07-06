@@ -7,10 +7,10 @@ module.exports = {
     entry: path.resolve(__dirname, 'src/index.js'),
     module: {
         rules: [
-            { test: /\.svg$/, use: 'svg-inline-loader', exclude: /node_modules/ },
+            {test: /\.svg$/, use: [{loader: 'babel-loader'}, {loader: 'react-svg-loader', options: {jsx: true}}]},
             { test: /\.css$/, use: [ 'style-loader', 'css-loader' ] },
             { test: /\.(js)$/, use: 'babel-loader', exclude: /node_modules/ },
-            { test: /\.svg|png|gif|jpg$/, loader: 'url-loader', exclude: /node_modules/ }
+            { test: /\.png|gif|jpg$/, loader: 'url-loader', exclude: /node_modules/ }
         ]
     },
     output: {
