@@ -2,10 +2,10 @@ import React from 'react';
 
 import {Bar, BarCard, BarLogo, ChartContainer, CardTitle, CardText, ExperienceChartContainer, BarText} from './style';
 
-import CPlusPlusIcon from '../../../../../images/c-plus-plus.svg';
-import CSharpIcon from '../../../../../images/c-sharp.svg';
-import KotlinIcon from '../../../../../images/kotlin.svg';
-import ReactIcon from '../../../../../images/react.svg';
+import CPlusPlusIcon from '../../../../../images/icons/c-plus-plus.svg';
+import CSharpIcon from '../../../../../images/icons/c-sharp.svg';
+import KotlinIcon from '../../../../../images/icons/kotlin.svg';
+import ReactIcon from '../../../../../images/icons/react.svg';
 
 const ExperienceChart = () => {
 
