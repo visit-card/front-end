@@ -24,5 +24,10 @@ export const light = {
         logo: {
             background: 'white'
         }
+    },
+    skills: {
+        svg: {
+            color: 'black'
+        }
     }
 }

@@ -7,6 +7,7 @@ import ScrollableElement from './scrollableElement';
 import Welcome from './elements/welcome';
 import Experience from './elements/experience';
 import Projects from './elements/projects';
+import Skills from './elements/skills';
 
 const Content = () => {
 
@@ -21,7 +22,7 @@ const Content = () => {
             <Projects />
         </ScrollableElement>
         <ScrollableElement id={SKILLS_ID}>
-            <div>SKILLS</div>
+            <Skills />
         </ScrollableElement>
     </ContentComponent>
 };

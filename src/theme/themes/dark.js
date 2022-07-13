@@ -24,5 +24,10 @@ export const dark = {
         logo: {
             background: 'black'
         }
+    },
+    skills: {
+        svg: {
+            color: 'white'
+        }
     }
 }
