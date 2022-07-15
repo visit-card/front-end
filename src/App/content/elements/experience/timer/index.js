@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useStopwatch } from 'react-timer-hook';
-import { CARIER_START_DATE } from '../../../../../global/utils';
+import { ARMY_TIME, CARIER_START_DATE, INTERNSHIP_TIME } from '../../../../../global/utils';
 import { TimerContainer } from './style';
 
 import Counter from './counter';
@@ -14,7 +14,7 @@ const ExperienceTimer = () => {
         minutes,
         hours,
         days
-    } = useStopwatch({ autoStart: true, offsetTimestamp:  new Date().getTime() + new Date(new Date() - CARIER_START_DATE).getTime() });
+    } = useStopwatch({ autoStart: true, offsetTimestamp:  new Date().getTime() + new Date(new Date() - CARIER_START_DATE).getTime() - ARMY_TIME - INTERNSHIP_TIME });
 
     const duration = moment.duration(days, 'days')
     return <TimerContainer>
