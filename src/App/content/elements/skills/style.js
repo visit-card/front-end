@@ -13,7 +13,7 @@ const SkillsContainer = styled.div`
 const SkillsTable = styled.div`
     display: grid;
     
-    grid-template-columns: repeat(5, 200px);
+    grid-template-columns: repeat(5, min-content);
     grid-template-rows: repeat(5, min-content);
     grid-gap: 30px;
     

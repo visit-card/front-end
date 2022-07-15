@@ -50,6 +50,7 @@ const CPlusPlusIcon = styled(CPlusPlus)`
 const ReactIcon = styled(React)`
     fill: ${({ theme }) => theme.skills.svg.color};
     stroke: ${({ theme }) => theme.skills.svg.color};
+    width: 200px;
     
     @media screen and ${DEVICES.laptop} {
         transform: scale(${ scale });
@@ -58,6 +59,7 @@ const ReactIcon = styled(React)`
 
 const SpringIcon = styled(Spring)`
     fill: ${({ theme }) => theme.skills.svg.color};
+    width: 200px;
     
     @media screen and ${DEVICES.laptop} {
         transform: scale(${ scale });
@@ -75,6 +77,7 @@ const FlywayIcon = styled(Flyway)`
 
 const LiquibaseIcon = styled(Liquibase)`
     fill: ${({ theme }) => theme.skills.svg.color};
+    width: 200px;
     
     @media screen and ${DEVICES.laptop} {
         transform: scale(${ scale });
@@ -110,6 +113,7 @@ const GitIcon = styled(Git)`
 
 const DockerIcon = styled(Docker)`
     fill: ${({ theme }) => theme.skills.svg.color};
+    width: 200px;
     
     @media screen and ${DEVICES.laptop} {
         transform: scale(${ scale });
@@ -118,6 +122,7 @@ const DockerIcon = styled(Docker)`
 
 const ReduxIcon = styled(Redux)`
     fill: ${({ theme }) => theme.skills.svg.color};
+    width: 200px;
     
     @media screen and ${DEVICES.laptop} {
         transform: scale(${ scale });
@@ -126,6 +131,7 @@ const ReduxIcon = styled(Redux)`
 
 const HibernateIcon = styled(Hibernate)`
     fill: ${({ theme }) => theme.skills.svg.color};
+    width: 200px;
     
     @media screen and ${DEVICES.laptop} {
         transform: scale(${ scale });
@@ -134,6 +140,7 @@ const HibernateIcon = styled(Hibernate)`
 
 const PostgresqlIcon = styled(Postgresql)`
     fill: ${({ theme }) => theme.skills.svg.color};
+    width: 200px;
     
     @media screen and ${DEVICES.laptop} {
         transform: scale(${ scale });
@@ -142,6 +149,7 @@ const PostgresqlIcon = styled(Postgresql)`
 
 const GradleIcon = styled(Gradle)`
     fill: ${({ theme }) => theme.skills.svg.color};
+    width: 200px;
     
     @media screen and ${DEVICES.laptop} {
         transform: scale(${ scale });
