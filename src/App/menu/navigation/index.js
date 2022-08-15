@@ -21,10 +21,6 @@ const Navigation = props => {
             title: 'ОПЫТ'
         },
         {
-            id: PROJECTS_ID,
-            title: 'ПРОЕКТЫ'
-        },
-        {
             id: SKILLS_ID,
             title: 'НАВЫКИ'
         }

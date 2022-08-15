@@ -1,12 +1,11 @@
 import React from 'react';
 
 import { ContentComponent } from './style';
-import { EXPERIENCE_ID, PROJECTS_ID, SKILLS_ID, WELCOME_ID } from './elements';
+import { EXPERIENCE_ID, SKILLS_ID, WELCOME_ID } from './elements';
 
 import ScrollableElement from './scrollableElement';
 import Welcome from './elements/welcome';
 import Experience from './elements/experience';
-import Projects from './elements/projects';
 import Skills from './elements/skills';
 
 const Content = () => {
@@ -17,9 +16,6 @@ const Content = () => {
         </ScrollableElement>
         <ScrollableElement id={EXPERIENCE_ID}>
             <Experience/>
-        </ScrollableElement>
-        <ScrollableElement id={PROJECTS_ID}>
-            <Projects />
         </ScrollableElement>
         <ScrollableElement id={SKILLS_ID}>
             <Skills />
